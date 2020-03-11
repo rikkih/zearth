@@ -10,7 +10,7 @@ My next thought was to use a minimal spanning tree. However, due to the potentia
 
 I decided to take a look online and do some research. Firstly, I clarified the problem: We want to find the path which minimises the the maximum distance between any pair of consecutive points on the path to Zearth. By this definition, we do not care if the path we take is the longest path.
 
-Upon some research, I came across the Floyd-Warshall algorithm, of which the vanilla algorithm finds the shortest path between any two vertices on a graph. However, this algorithm can be tweaked to minimize the maximum distance between any two points in a connected graph.
+Upon some research, I came across the Floyd-Warshall algorithm, of which the vanilla algorithm finds the shortest path between any two vertices on a graph. However, this algorithm can be tweaked to minimize the maximum distance between any two consecutive points in a path between source and target in a connected graph.
 
 The calculation within the nested for loop has been modified to amend the distance between any two points to be the maximum of the two edges being compared between the kth node, for all pairs of nodes.
 
