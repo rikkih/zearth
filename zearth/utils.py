@@ -21,7 +21,7 @@ def parse_input(file):
     -------
     ndarray [num_station, 3]
     """
-    inp = read_input_file(file)
+    inp = _read_input_file(file)
 
     text = [line.rstrip('\n') for line in inp]
     zearth = np.array([float(n) for n in text[0].split()])

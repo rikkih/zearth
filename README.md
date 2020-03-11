@@ -21,6 +21,7 @@ Use a virtual environment to install the requirements to run this code.
 ```bash
 cd path/to/cloned/directory/
 python -m venv env
+source env/bin/activate
 pip install -r requirements.txt
 ```
 
