@@ -34,6 +34,6 @@ def floyd_warshall_minimax(dists):
     dist_matrix = dists
     for k in range(len(dist_matrix)):
         for i in range(len(dist_matrix)):
-            for j in range(len(dist_matrix)):
+            for j in range(i):
                 dist_matrix[i][j] = min(dist_matrix[i][j], max(dist_matrix[i][k], dist_matrix[k][j]))
     return dist_matrix

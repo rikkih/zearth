@@ -14,6 +14,12 @@ Upon some research, I came across the Floyd-Warshall algorithm, of which the van
 
 The calculation within the nested for loop has been modified to amend the distance between any two points to be the maximum of the two edges being compared between the kth node, for all pairs of nodes.
 
+## Optimisations
+
+1. Since we can treat the paths between teleporation stations as an undirected connected graph. Then the matrix that results from the distance matrix is symmetric. Therefore, we only need to perform our minimax calculation on the lower, or upper, triangular matrix of the distance matrix. This cuts the time taken to run the algorithm by 2. A half decent improvement.. Get it?
+
+Implementation-wise, we can make the inner-most nested for loop only iterate to the length of the next outer for loops value, iterating only over the lower triangular matrix of the distance matrix.
+
 ## Run
 
 First, clone this environment.
