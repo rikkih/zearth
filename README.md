@@ -16,6 +16,7 @@ The calculation within the nested for loop has been modified to amend the distan
 
 ## Run
 
+First, clone this environment.
 Use a virtual environment to install the requirements to run this code.
 
 ```bash
@@ -23,5 +24,7 @@ cd path/to/cloned/directory/
 python -m venv env
 source env/bin/activate
 pip install -r requirements.txt
+
+python minimax.py data/input_sample.py
 ```
 
