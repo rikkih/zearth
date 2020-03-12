@@ -29,7 +29,8 @@ Again, implementation-wise this is really easy. Numba uses decorators, so we mer
 Our algorithm, Floyd-Warshall, contains a triple-nested for loop. Therefore, the time complexity of this algorithm is
 ![](https://latex.codecogs.com/gif.latex?O%28n%5E%7B3%7D%29). TODO
 
-Memory-wise, TODO.
+Memory-wise, we have to construct a distance matrix between all points in the input. This is at most `N = 500`, and since our distance matrix is of size `|N|\*|N|`, our space complexity is 
+![](https://latex.codecogs.com/gif.latex?O%28n%5E2%29)
 
 ## Run
 
