@@ -9,6 +9,7 @@ def main(file):
     dists = get_distance_matrix(stations)
     minimax_paths = floyd_warshall_minimax(dists)
     solution = minimax_paths[-1, 0]
+    solution = round(solution, 2)
     print(solution)
     return solution
 
