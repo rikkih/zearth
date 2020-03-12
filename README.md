@@ -34,7 +34,7 @@ Memory-wise, we have to construct a distance matrix between all points in the in
 
 ## Run
 
-First, clone this environment.
+First, clone this repository.
 Use a virtual environment to install the requirements to run this code.
 
 Currently, I only have two files for you to test in the data directory. `input_simple.txt` is one of the examples in the assignment sheet. The other, `input_large.txt` is a more challenging example, containing the maximum `500` teleportation stations. The current algorithm, as it stands, can process this in less than a second.
