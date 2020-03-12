@@ -2,6 +2,8 @@
 
 This is the solution source code to the Zearth minimax path problem. This includes all optimised code as well as my thought process and analysis.
 
+Please Note: My writtenanswers are within this README. I prefer to use markdown for exposition. I do have the written solutions in text format. If this is essential, I can push this. 
+
 ## My approach and thoughts
 
 My initial thought to solving this problem was to use some kind of informed search. For example, it might be a good idea to use best first search with backtracking. Our heuristic would be to expand the stations with the shortest distance to the current station. Problems kept arising when thinking about this, such as which data structure to use with backtracking. Each station would need its own set of queues. 
