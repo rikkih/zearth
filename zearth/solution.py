@@ -1,3 +1,4 @@
+from numba import njit
 from sklearn.metrics import pairwise_distances
 
 
@@ -15,6 +16,7 @@ def get_distance_matrix(stations):
     return pairwise_distances(stations)
 
 
+@njit
 def floyd_warshall_minimax(dists):
     """
     Performs a tweaked version of Floyd-Warshall on a distance matrix.
